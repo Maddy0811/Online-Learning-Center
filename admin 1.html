@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC-LEARNING</title>
+<link rel="stylesheet" href="/CSS/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function studentData(){
+    var key = "";
+ var list = "<tr><th>Name</th><th>email</th><th>course</th><th>contact</th></tr>\n";
+ var i = 0;
+ 
+ if (localStorage.length == 0) {
+ list += "<tr><td><i>empty</i></td><td><i>empty</i></td><td><i>empty</i></td><td><i>empty</i></td></tr>\n";
+ } else {
+ for (i = 0; i < localStorage.length; i++) {
+ 
+ key = localStorage.key(i);
+ let data = JSON.parse(localStorage.getItem(key));
+ 
+ list += "<tr><td>" + key + "</td>\n<td>" +
+ data[0] + "</td>\n<td>" + data[1] + "</td></tr>\n";
+ 
+ }
+ }
+ document.getElementById('list').innerHTML = list;
+ 
+  }
+  </script>
+<style media="screen">
+   
+
+
+  
+</style>
+
+</head>
+<body>
+    <section class="sub-header" style="margin-bottom:0px;">
+        <nav>
+            <a href="index.html"><img src="/images/ABC learning center - Copy.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="privacy.html">PRIVACY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                      <li><a href="sitemap.html">SITEMAP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+
+
+    <div id="title"> 
+        <h1 id="admin">Administration system</h1>
+        
+    
+    <div id="form_for_search">
+        <form name="studentDetails" method="GET" onsubmit="localStorage">
+            
+
+
+            <div id="Searchstudent">
+                <table>
+                    <tr id="align">
+                        <td>
+                            <label for="name"><b>Name:</b></label><br>
+                            <input type="text" id="name" name="name" required>
+                        </td>
+                        <td>
+                            <label for="Course"><b>Course:</b></label><br>
+                            <input type="radio" name="Course" value="HTML" required> HTML<br>
+                            <input type="radio" name="Course" value="CSS"> CSS
+                            <input type="radio" name="Course" value="JAVASCRIPT"> JavaScript
+                        </td>
+                        <td>
+                            <label for="category"><b>Phone Number:</b></label><br>
+                            <input type="text" id="ph" name="ph" required>
+                        </td>
+                       
+                    </tr>
+                    <tr id="buttonGroups">
+                        <td>
+                            <input type="button" class="click" value="Save" onclick="studentData()"> 
+                            <input type="button" class="click" value="Edit" onclick="edit()"> 
+                            <input type="button" class="click" value="Delete" onclick="deletes()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+           
+     <!-- personal information -->
+     <div id="items_table">
+        <h2>Student Details</h2>
+        <table id=list></table>
+        
+    </div>
+</form>   
+</div> 
+
+     
+
+     <section class="footer" style=" margin: top 400px">
+
+    
+             <h4>© 2023 ABC inc. All rights reserved</h4>
+
+             <div class="icons">
+                 <i class="fa fa-facebook"></i>
+                 <i class="fa fa-twitter"></i>
+                 <i class="fa fa-instagram"></i>
+                 <i class="fa fa-linkedin"></i>
+             </div>
+
+     </section>
+
+
+
+     <!----JavaScript for toggle menu---->
+     <script>
+         var navLinks = document.getElementById("navLinks");
+
+         function showMenu() {
+             navLinks.style.right = "0";
+         }
+
+         function hideMenu() {
+             navLinks.style.right = "-200px";
+         }
+     </script>
+
+     <script src="data2.js">
+
+     </script>
+
+
+
+     </body>
+     </html>

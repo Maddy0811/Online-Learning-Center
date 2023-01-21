@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC-LEARNING</title>
+<link rel="stylesheet" href="/CSS/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/images/ABC learning center - Copy.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="privacy.html">PRIVACY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+
+<!---- course ----->
+
+    <section class="course">
+    <main>
+
+     <div class="prog-cont">
+         <h1  style="float:left;">Schedule</h1>
+         <hr width="100%" >
+         <div >
+            <!--Schedule-->
+            <table border ="1" cellspacing="0" align="center" style="width: 100%;height: 100%;">
+             <tr style="background-color: rgb(0, 0, 0);color: rgb(255, 255, 255);text-align: center;">
+               <td>Course</td>
+               <td>Dates</td>
+               <td>Time</td>
+             </tr>
+             <tr style="background-color: rgb(91, 89, 100);color: rgb(255, 255, 255);text-align: center;padding: 20px;">
+               <td>HTML</td>
+               <td>Jan 1 - JAN 30 </td>
+               <td>12:00pm - 03:00pm</td>
+             </tr>
+             <tr style="background-color: rgb(91, 89, 100);color: rgb(255, 255, 255);text-align: center;padding-top: 20px;">
+               <td> CSS</td>
+               <td>Feb 1 - Feb 28 </td>
+               <td>12:00pm - 03:00pm</td>
+             </tr>
+             <tr style="background-color:rgb(91, 89, 100);color: rgb(255, 255, 255);text-align: center;padding: 20px;">
+               <td>JavaScript</td>
+               <td>Mar 1 - Mar 30 </td>
+               <td>12:00pm - 03:00pm</td>
+             </tr>
+             <tr style="background-color: rgb(91, 89, 100);color: rgb(255, 255, 255);text-align: center;padding: 20px;">
+               <td>Final Project</td>
+               <td>April 2</td>
+               <td>12:00pm - 03:00pm</td>
+             </tr>
+            </table>
+            <p style="font-size: 30px;">Duration:3 months</p>
+            <!--Schedule-->
+         </div>
+         <div class="">
+            <h1>Starts from 1 Jan</h1>
+            <div class="lol">
+              <button type="button" onclick="document.location='registration.html'" >Enroll Now</button>
+            </div>
+         </div>
+     </div>
+    </main>
+    </section>
+
+>
+
+<!---- footer ---->
+
+<section class="footer">
+        <h4>© 2023 ABC inc. All rights reserved</h4>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+</section>
+
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

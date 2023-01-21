@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC-LEARNING</title>
+<link rel="stylesheet" href="/CSS/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/images/ABC learning center - Copy.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="privacy.html">PRIVACY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+
+<!---------- course ----------->
+
+<main class="leo">
+
+
+        <div class="course-detail">
+
+
+              <div class="h-course">
+                         <h1>Introduction to HTML,CSS & JAVASCRIPT</h1>
+                         <h4>Learn the fundamentals of html,css and JavaScript</h4>
+
+              </div>
+              <br>
+
+              <div class="h-course-int">
+                <h2>There is a Session Available:</h2>
+
+              </div>
+              <div class="div1">
+                <h4>COURSE STARTS AT 20 DEC</h4>
+                <button type="button"  onclick="document.location='courseschedule.html'">SEE SCHEDULE</button>
+              </div>
+
+
+              <div class="mouse">
+                About This Course
+              </div>
+              <p>In this course, we will learn the basic tools that every web page coder needs to know. We will start from the ground up by learning how to implement modern web pages with HTML and CSS. We will then advance to learning how to code our pages such that its components rearrange and resize themselves automatically based on the size of the user’s screen. You’ll be able to code up a web page that will be just as useful on a mobile phone as on a desktop computer. No “pinch and zoom” required! Last but certainly not least, we will get a thorough introduction to the most ubiquitous, popular, and incredibly powerful language of the web: Javascript. Using Javascript, you will be able to build a fully functional web application that utilizes Ajax to expose server-side functionality and data to the end user.</p>
+
+
+
+        </div>
+
+
+
+      </main>
+
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>© 2023 ABC inc. All rights reserved</h4>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+</section>
+
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC-LEARNING</title>
+<link rel="stylesheet" href="CSS/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/ABC learning center - Copy.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="privacy.html">PRIVACY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                      <li><a href="sitemap.html">SITEMAP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+    <div class="du">
+       <h1>Thank you for enrolling.
+            We hope you enjoy the course.</h1>
+       <h4> </h4>
+
+
+      <button type="button"  onclick="document.location='index.html'">Go-Back</button>
+
+    </div>
+    <!-------- footer ---------->
+
+    <section class="footer">
+            <h4>© 2023 ABC inc. All rights reserved</h4>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+    </section>
+
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+    </html>

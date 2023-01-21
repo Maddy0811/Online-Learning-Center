@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC-LEARNING</title>
+<link rel="stylesheet" href="/CSS/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="tabs.css">
+      
+
+      </script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/images/ABC learning center - Copy.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="privacy.html">PRIVACY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                      <li><a href="sitemap.html">SITEMAP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+
+<!---------- course ----------->
+
+<main>
+
+ <!---Tabs-->
+ <div id="tabs-container">
+    <header class="tabs-nav">
+      <ul>
+        <li class="active"><a href="#tab1">ABOUT</a></li>
+        <li><a href="#tab2">COURSES</a></li>
+        <li><a href="#tab3">CONTACTUS</a></li>
+
+      </ul>
+    </header>
+    <section class="tabs-content">
+      <div id="tab1">
+        <h3>About page </h3>
+        <p>
+          ABC learning center was founded in 2017 . The University offers associate and bachelor’s degree programs in software development as well as master’s degree programs in software development and Education. There presently are more than 10,000 students enrolled from more than 20 countries.
+        </p>
+      </div>
+      <div id="tab2">
+        <h3>Courses Page</h3>
+        <p>
+             We offer three courses name- HTML , CSS & JAVA.You can click on courses for more.
+
+       </p>
+      </div>
+      <div id="tab3">
+        <h3>Contact Us</h3>
+        <p>
+              You can contact us for any kind of help and feedback . We are always available for you.
+        </p>
+      </div>
+
+    </section>
+ </div>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="tabs.js"></script>
+  <!---Tabs-->
+</main>
+
+
+
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>© 2023 ABC inc. All rights reserved</h4>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+</section>
+
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script>
+$(function() {
+    $('.tabs-nav a').click(function() {
+
+      // Check for active
+      $('.tabs-nav li').removeClass('active');
+      $(this).parent().addClass('active');
+
+      // Display active tab
+      let currentTab = $(this).attr('href');
+      $('.tabs-content div').hide();
+      $(currentTab).show();
+
+      return false;
+    });
+  });</script>
+
+</body>
+</html>
